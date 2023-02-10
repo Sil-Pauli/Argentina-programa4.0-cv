@@ -1,0 +1,572 @@
+/* fuente monserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* imagen de fondo para el inicio */
+#inicio{
+    background:linear-gradient( rgba(25, 19, 15, .7),rgba(25, 19, 15, .7)), url("img/inicio.jpg"); 
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+/* barra de inicio */
+#inicio .contenido header{
+    background-color:rgba(25, 19, 15, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0 
+}
+
+/* posicionamiento del contenido en el header */
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:5px 3%;
+}
+
+/* cv (logo) */
+#inicio .contenido header .contenido-header h1{
+    cursor: pointer;
+    text-align: center;
+    color:#9AB257;
+    transition: all 0.3s;
+}
+
+#inicio .contenido header .contenido-header h1:hover{
+    transform: scale(1.2);
+}
+
+/* posicionamiento de las listas en el haader */
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover{
+    color:#9AB257;
+}
+
+
+/* contenido presentacion */
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion .bienvenidos{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span{
+    font-size: 25px;
+    color:#9AB257;
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#inicio .contenido .presentacion a:hover{
+    background-color: #9AB257;
+}
+#icono-nav{
+    display: none;
+}
+
+/* seccion sobre mi */
+#sobremi{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #191310;
+    display: flex;
+}
+
+#sobremi .contenedor-foto{
+   max-width: 400px;
+   margin-right: 80px; 
+}
+
+#sobremi .contenedor-foto img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f0ead2;
+}
+
+#sobremi .sobremi{
+    margin: 0 40px;
+}
+
+/* titulo sobre mi mas subrayado */
+#sobremi .sobremi .titulo{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #191310;
+    text-decoration: underline;
+    text-decoration-color: #dde5b6;
+    text-decoration-thickness: 5px;
+}
+
+/* saludo */
+#sobremi .sobremi h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#sobremi .sobremi h2 span{
+    color:#9AB257;
+}
+
+#sobremi .sobremi h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* texto info */
+#sobremi .sobremi p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #342e2c;
+    margin-bottom: 12px;
+}
+
+/* descargar cv */
+ #sobremi .sobremi a {
+    display: inline-block;
+    text-decoration: none;
+    color: #191310;
+    border-radius: 30px;
+    border: 1px solid #191310;
+    padding: 10px 20px;
+    margin-top: 30px;
+    transition: .5s;
+ }
+
+ #sobremi .sobremi a:hover{
+    background-color: #9AB257;
+    color: #fff;
+    border: #9AB257;
+ }
+
+ /* info + habilidades */
+.contenedor-info{
+    background:linear-gradient( rgb(154, 178, 87, .8),rgba(25, 19, 15, .9)), url("img/info-habilidades.jpg"); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#fff;
+    background-position: center center;
+    padding: 100px 60px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-info .info h2{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #dde5b6;
+    text-decoration-thickness: 5px;
+}
+.contenedor-info .info h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.contenedor-info .info p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #f0ead2;
+    margin-bottom: 12px;
+}
+
+/* educacion */
+
+.contenedor-info .educa{
+    max-width: 600px;
+    margin: 30px auto;
+}
+/* experiencia */
+
+.contenedor-info .empre{
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+/* habilidades */
+.contenedor-info .habili{
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.contenedor-info .habili .info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-info .habili .lista{
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #f0ead2;
+}
+
+.contenedor-info .habili .barra{
+    background-color: #342e2c;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+
+.contenedor-info .habili .barra-progreso1{
+    background-color: #f0ead2;
+    width: 95%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+}
+.contenedor-info .habili .barra-progreso2{
+    background-color: #f0ead2;
+    width: 90%;
+    height: 6px;
+    animation: progreso2 2s forwards;
+}
+.contenedor-info .habili .barra-progreso3{
+    background-color: #f0ead2;
+    width: 80%;
+    height: 6px;
+    animation: progreso3 2s forwards;
+}
+.contenedor-info .habili .barra-progreso4{
+    background-color: #f0ead2;
+    width: 75%;
+    height: 6px;
+    animation: progreso4 2s forwards;
+}
+/* animacion de barras */
+@keyframes progreso1 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes progreso2 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes progreso3 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes progreso1 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+/* portfolio */
+#portfolio{
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+#portfolio .titulo-seccion{
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #191310;
+    text-decoration: underline;
+    text-decoration-color: #dde5b6;
+    text-decoration-thickness: 5px;
+}
+#portfolio .fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+#portfolio .fila .proyecto{
+    max-width: 450px;
+    border: 1px solid #191310;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+#portfolio .fila .proyecto img{
+    width: 100%;
+    height: 100%;
+}
+#portfolio .fila .proyecto:hover img{
+    filter: grayscale(0);
+}
+#portfolio .fila .proyecto .info{
+    position: absolute;
+    left: 0;
+    background-color: rgba(25, 19, 15, .7);
+    color: #9AB257;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+#portfolio .fila .proyecto:hover .info{
+    opacity: 1;
+    bottom: 0;
+}
+
+
+/* contacto */
+#contacto{
+    padding: 100px 15px;
+    background-color: #f0ead2;
+}
+#contacto .titulo-seccion{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #191310;
+    text-decoration: underline;
+    text-decoration-color: #dde5b6;
+    text-decoration-thickness: 5px;
+}
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+#contacto .contenedor-form .fila{
+    margin-bottom: 15px;
+}
+#contacto .contenedor-form .mitad{
+    display: flex;
+    justify-content: space-between;
+}
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #dde5b6;
+}
+#contacto .contenedor-form .mitad input{
+    width: 48%;
+}
+#contacto .contenedor-form .input-full{
+    width: 100%;
+}
+
+#contacto .btn-enviar{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px !important;
+    
+}
+#contacto .btn-enviar:hover{
+    background-color: #9AB257;
+    color: #f0ead2;
+    border: #f0ead2;
+}
+
+/* footer */
+footer{
+    background-color: #9AB257;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+footer .iconos img{
+    width: 50px;
+    display: inline-block;
+    
+}
+/* RESPONSIVE */
+@media screen and (max-width:800px) {
+    nav{
+        display: none;
+    }
+    nav.responsive{
+        display: block;
+        background-color: rgba(25, 19, 15, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav ul{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav .responsive ul li{
+        margin: 5px 0;
+        
+    }
+    #icono-nav{
+        display: block;
+    }
+
+ 
+/* icono responsive burger + cruz */
+button {
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    border: 0;
+    background: transparent;
+    gap: .35rem;
+}
+button >div{
+    background: white;
+    height: 2px;
+    width: 70%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+button:hover div:first-child{
+ transform: rotate(45deg);
+}
+button:hover div:nth-child(2){
+    opacity: 0;
+}
+button:hover div:last-child{
+    transform: rotate(-45deg);
+}
+
+
+#inicio .contenido .presentacion h2{
+    font-size: 40px;
+}
+/* responsive sobre mi */
+#sobremi{
+   padding: 50px 0;
+   display: block; 
+}
+#sobremi .contenedor-foto{
+    max-width: 200px;
+    margin: auto;
+}
+#sobremi .contenedor-foto img{
+    padding: 8px;
+}
+#sobremi .sobremi .titulo{
+    text-align: center;
+}
+#sobremi .sobremi h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* responsive info */
+.contenedor-info{
+    padding: 50px 20px;
+    display: block;
+} 
+.contenedor-info .info img{
+    display: grid;
+    gap:1em;
+   justify-items: center ;
+   margin: 0 auto;
+}
+.contenedor-info .info h2{
+    text-align: center;
+} 
+/* responsive portfolio */
+ #portfolio .fila{
+    display: block;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+#portfolio .fila .proyecto{
+    margin: 10px auto;
+} 
+
+/* responsive contacto */
+#contacto {
+    padding: 50px 15px;
+}
+#contacto .contenedor-form .mitad {
+    margin-bottom: 15px;
+    display: block;
+}
+#contacto .contenedor-form .mitad input {
+    width: 100%;
+    margin-bottom: 15px;
+} 
+}

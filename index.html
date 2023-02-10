@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+        <title>CV Argentina Programa 4.0</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- seccion de INICIO -->
+        <section id="inicio">
+            <div class="contenido">
+                <!-- <img src="img/inicio.jpg" alt="camara" > -->
+                <header>
+                    <div class="contenido-header">
+                        <h1>cv</h1>
+                        <nav id="nav" class="responsive">
+                            <ul id="links">
+                                <li><a href="#inicio" class="seleccionado">INICIO</a></li>
+                                <li><a href="#sobremi">SOBRE MI</a></li>
+                                <li><a href="#portfolio">PORTFOLIO</a></li>
+                                <li><a href="#contacto">CONTACTO</a></li>
+                            </ul>
+                        </nav>
+                        
+                      <!-- icono hambur,para el responsive -->  
+                        <div id="icono-nav" onclick="responsiveMenu()">
+                            <button>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </button>
+                        </div>
+                    </div> 
+                </header>
+                <div class="presentacion">
+                    <p class="bienvenidos">BIENVENIDOS</p>
+                    <h2>Soy <span id="nombre"></span> <span id="apellido"></span>, Photographer</h2>
+                     <a href="#contacto">CONTACTO</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- secccion SOBRE MI -->
+        <section id="sobremi">
+            <div class="contenedor-foto">
+                <img src="" alt="foto de perfil" id="foto"> 
+            </div>
+            <div class="sobremi">
+                <p class="titulo">Sobre mi</p>
+                <h2>Hola, soy <span id="nombre2"></span></h2>
+                <h3>Photographer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum pretium magna. Sed sed orci et lacus malesuada tempor. Maecenas at sagittis felis. Donec sed dui gravida, facilisis ipsum et, tincidunt nulla. Nullam viverra eleifend mauris in tempor. Suspendisse dapibus eros ante, rhoncus laoreet arcu hendrerit quis. Nulla sagittis malesuada leo et faucibus. Duis quis arcu vel risus pulvinar hendrerit. Morbi rutrum sapien at diam aliquet, at sodales ligula consectetur. Nulla sed ornare dui.</p>
+                <a href="#">Descargar CV</a>
+            </div>
+        </section>
+
+        <!-- seccion INFO + HABILIDADES -->
+        <div class="contenedor-info" id="info">
+            <!-- educacion -->
+            <div class="info">
+                <article class="educacion">
+                    <img src="img/pencil.svg"  alt="icono lapiz" class="icon">
+                    <h2 class="educacion">Educación</h2>
+                    <div class="educa">
+                        <h3 class="titulo">Título</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="educa">
+                        <h3 class="titulo">Título</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="educa">
+                        <h3 class="titulo">Título</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </article>
+            </div>
+            <!-- experiencia -->
+            <div class="info">
+                <img src="img/maletin.svg" alt="icono maletin" class="icon">
+                <h2 class="experiencia">Experiencia</h2>
+                <div class="empre">
+                    <h3 class="empresa">Empresa 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum pretium magna.</p>
+                </div>
+                <div class="empre">
+                    <h3 class="empresa">Empresa 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum pretium magna.</p>
+                </div>
+                <div class="empre">
+                    <h3 class="empresa">Empresa 3</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum pretium magna. </p>
+                </div>
+            </div>
+            <!-- habilidades -->
+            <div>
+                <article class="info">
+                    <img src="img/capa.svg" alt="icono capas" class="icon">
+                    <h2 class="habilidades">Habilidades</h2>
+                    <!-- habili 1 -->
+                    <div class="habili">
+                        <div class="info">
+                            <p><span class="lista"></span>Habilidad 1</p>
+                            <span class="porcentaje1">95%</span>
+                        </div>
+                        <div class="barra">
+                            <div id="1" class=""></div>
+                        </div>
+                    </div>
+                    <!-- habili 2 -->
+                    <div class="habili">
+                        <div class="info">
+                            <p><span class="lista"></span>Habilidad 2</p>
+                            <span class="porcentaje2">90%</span>
+                        </div>
+                        <div class="barra">
+                            <div id="2" class=""></div>
+                        </div>
+                    </div>
+                    <!-- habili 3 -->
+                    <div class="habili">
+                        <div class="info">
+                            <p><span class="lista"></span>Habilidad 3</p>
+                            <span class="porcentaje3">80%</span>
+                        </div>
+                        <div class="barra">
+                            <div id="3" class=""></div>
+                        </div>
+                    </div>
+                    <!-- habili 4 -->
+                    <div class="habili">
+                        <div class="info">
+                            <p><span class="lista"></span>Habilidad 4</p>
+                            <span class="porcentaje4">75%</span>
+                        </div>
+                        <div class="barra">
+                            <div id="4" class=""></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- seccion PORTFOLIO -->
+        <section id="portfolio">
+            <h3 class="titulo-seccion">Proyectos</h3>
+            <div class="fila">
+                <!-- galeria 1 -->
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/foto-1.jpg" alt="paisajes">
+                    <div class="info">
+                        <h4>Descripción</h4>
+                        <p>Galeria 1</p>
+                    </div>
+                </div>
+                <!-- galeria 2 -->
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/foto-2.jpg" alt="nocturno">
+                    <div class="info">
+                        <h4>Descripción</h4>
+                        <p>Galeria 2</p>
+                    </div>
+                </div>
+                <!-- galeria 3 -->
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/foto-3.jpg" alt="comida">
+                    <div class="info">
+                        <h4>Descripción</h4>
+                        <p>Galeria 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <!-- galeria 4 -->
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/foto-4.jpg" alt="retrato">
+                    <div class="info">
+                        <h4>Descripción</h4>
+                        <p>Galeria 4</p>
+                    </div>
+                </div>
+                <!-- galeria 5 -->
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/foto-5.jpg" alt="producto">
+                    <div class="info">
+                        <h4>Descripción</h4>
+                        <p>Galeria 5</p>
+                    </div>
+                </div>
+                <!-- galeria 6 -->
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/foto-6.jpg" alt="detalle/macro">
+                    <div class="info">
+                        <h4>Descripción</h4>
+                        <p>Galeria 6</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- seccion CONTACTO -->
+        <section id="contacto">
+            <h3 class="titulo-seccion">Hablemos</h3>
+            <div class="contenedor-form">
+                <form action>
+                    <div class="fila mitad">
+                        <input type="text" placeholder="Nombre completo" class="input-mitad">
+                        <input type="text" placeholder="Mail" class="input-mitad">
+                    </div>
+                    <div class="fila">
+                        <input type="text" placeholder="Tema..." class="input-full">
+                    </div>
+                    <div class="fila">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                </form>
+            </div>
+        </section>
+
+        <!-- seccion FOOTER -->
+        <footer>
+            <p>Trabajo realizado por SILVANA PAULINA SAN MARTIN</p>
+            <div class="iconos">
+                <img src="img/logo-arg-prog.png" alt="logo Argentina programa" id="foto"> 
+                <img src="img/Logo_master_fondo_transp.webp" alt="logo Ticmas" id="foto"> 
+            </div>
+        </footer>
+    
+        <script src="index.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
